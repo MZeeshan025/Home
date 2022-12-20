@@ -1,0 +1,98 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form</title>
+    <link rel="icon" href="imgs/img5.png">
+</head>
+<body>
+    <div class="tital">
+        <h1> Fill this form to access a calculater </h1>
+    </div>
+
+
+
+    <form id="form" action="">
+
+        <div id="outer-div">
+
+            <div id="inner-div">
+
+                <label class="main-lable" for="fname">First Name:</label>
+                <input class="input-width" id="fname" required type="text" placeholder="Enter your first name" />
+                <br>
+                <br>
+
+                <label class="main-lable" for="lname">Last Name:</label>
+                <input required class="input-width" id="lname" type="text" placeholder="Enter your last name" />
+                <br>
+                <br>
+
+                <h4>Classificaton</h4>
+                <input type="radio" name="classificaton" id="5 Stars" value="5 Stars" />
+                <label for="5 Stars">5 Stars</label>
+                <br>
+
+                <input type="radio" name="classificaton" id="Full Furnished" value="Full Furnished" />
+                <label for="Full Furnished">Full Furnished</label>
+                <br>
+
+                <input type="radio" name="classificaton" id="Family Hostel" value="Family Hostel" />
+                <label for="Family Hostel">Family Hostel</label>
+                <br>
+
+                <input type="radio" name="classificaton" id="Girls Hostel" value="Girls Hostel" />
+                <label for="Girls Hostel">Girls Hostel</label>
+                <br>
+
+                <input type="radio" name="classificaton" id="Boys Hostel" value="Boys Hostel" />
+                <label for="Boys Hostel">Boys Hostel</label>
+                <br>
+                <br>
+
+                <label class="main-lable" for="email">Email:</label>
+                <input required class="input-width" id="email" type="text" placeholder="xxxxxxx@gmail.com" />
+                <br />
+                <br />
+
+                <label class="main-lable" for="phone">Phone:</label>
+                <input class="input-width" placeholder="xxxxxxxxxx (0-9)" required id="phone" type="text" minlength="10" maxlength="10" />
+                <br />
+                <br />
+
+                <label class="main-lable" for="course">You are best at:</label>
+                <select name="course" id="course">
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="Javascript">JS</option>
+                </select>
+                <br />
+                <br />
+
+                <h4>Programming Language you want to learn?</h4>
+                <input type="checkbox" name="c" id="c" value="C" />
+                <label for="c">Php</label>
+                <br />
+                <input type="checkbox" name="c#" id="c#" value="C#" />
+                <label for="c#">C++</label>
+                <br />
+                <input type="checkbox" name="java" id="java" value="Java" />
+                <label for="java">Java</label>
+
+            </div>
+
+        </div>
+
+        <div id="btn-div">
+            <button type="submit">Submit</button>
+        </div>
+
+    </form>
+    <script src="/js/formm.js"></script>
+</body>
+</html>
